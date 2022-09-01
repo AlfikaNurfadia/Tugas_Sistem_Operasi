@@ -2,14 +2,17 @@
 ### NIM  : 2110131220016
 
 ## Device Specifications
-- Device name	LAPTOP-66LLDMA5
-- Processor	AMD Ryzen 7 5700U with Radeon Graphics 1.80 GHz
-- Installed RAM	8,00 GB (7,40 GB usable)
-- Device ID	A1276A68-6AED-4715-9A9E-7CFA9B8C30B4
-- Product ID	00327-35933-47086-AAOEM
-- System type	64-bit operating system, x64-based processor
+- Computer name:	LAPTOP-66LLDMA5
+- System Manufacturer: ASUSTeK COMPUTER INC.
+- System Model: VivoBook_ASUSLaptop X421UA_M433UA
+- BIOS: X421UA.302
+- Processor:	AMD Ryzen 7 5700U with Radeon Graphics 1.80 GHz
+- Memory: RAM	8,00 GB (7,40 GB usable)
+- Device ID:	A1276A68-6AED-4715-9A9E-7CFA9B8C30B4
+- Product ID:	00327-35933-47086-AAOEM
+- System type:	64-bit operating system, x64-based processor
 
-## Sistem Operasi (Windows Specifications)
+## Operating System
 - Edisi	Windows 10 Home Single Language
 - Version	21H2
 - Installed on	20/07/2021
