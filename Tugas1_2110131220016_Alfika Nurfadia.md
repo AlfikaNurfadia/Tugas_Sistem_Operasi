@@ -9,7 +9,7 @@
 - Product ID	00327-35933-47086-AAOEM
 - System type	64-bit operating system, x64-based processor
 
-## Windows Specifications
+## Sistem Operasi (Windows Specifications)
 - Edisi	Windows 10 Home Single Language
 - Version	21H2
 - Installed on	20/07/2021
