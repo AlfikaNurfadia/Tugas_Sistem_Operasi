@@ -24,7 +24,7 @@ affect control of the machine or do **I/O** )Input/Output" are forbidden to user
 programs. We will come back to the difference between kernel mode and user
 mode repeatedly throughout this book. It plays a crucial role in how operating systems work.
 
-<p  align = "center"><img src = "Figure1.jpg"></p>
+<p  align = "center"><img src = "Figure1.JPG"></p>
 
 The user interface program, shell or GUI, is the lowest level of user-mode software, and allows the user to start other programs, such as a Web browser, email
 reader, or music player. These programs, too, make heavy use of the operating system.
@@ -127,7 +127,7 @@ care) how much trouble they are causing for the software. One of the major tasks
 of the operating system is to hide the hardware and present programs (and their
 programmers) with nice, clean, elegant, consistent, abstractions to work with instead. Operating systems turn the ugly into the beautiful, as shown in Fig. 1-2.
 
-<p  align = "center"><img src = "Figure2.jpg"></p>
+<p  align = "center"><img src = "Figure2.JPG"></p>
 
 It should be noted that the operating system’s real customers are the application programs (via the application programmers, of course). They are the ones
 who deal directly with the operating system and its abstractions. In contrast, end
@@ -291,7 +291,7 @@ operating system), which read the first job from tape and ran it. The output was
 written onto a second tape, instead of being printed. After each job finished, the
 operating system automatically read the next job from the tape and began running.
 
-<p  align = "center"><img src = "Figure3.jpg"></p>
+<p  align = "center"><img src = "Figure3.JPG"></p>
 
 When the whole batch was done, the operator removed the input and output
 tapes, replaced the input tape with the next batch, and brought the output tape to a
@@ -320,7 +320,7 @@ product lines. On the one hand, there were the word-oriented, large-scale scient
 computers, such as the 7094, which were used for industrial-strength numerical
 calculations in science and engineering. On the other hand, there were the
 
-<p  align = "center"><img src = "Figure4.jpg"></p>
+<p  align = "center"><img src = "Figure4.JPG"></p>
 
 character-oriented, commercial computers, such as the 1401, which were widely
 used for tape sorting and printing by banks and insurance companies.
@@ -396,7 +396,7 @@ Having multiple jobs safely in memory at once requires special hardware to prote
 each job against snooping and mischief by the other ones, but the 360 and other
 third-generation systems were equipped with this hardware.
 
-<p  align = "center"><img src = "Figure5.jpg"></p>
+<p  align = "center"><img src = "Figure5.JPG"></p>
 
 Another major feature present in third-generation operating systems was the
 ability to read jobs from cards onto the disk as soon as they were brought to the
@@ -790,7 +790,7 @@ very compact summary. Many books have been written on the subject of computer
 hardware and computer organization. Two well-known ones are by Tanenbaum
 and Austin (2012) and Patterson and Hennessy (2013).
 
-<p  align = "center"><img src = "Figure6.jpg"></p>
+<p  align = "center"><img src = "Figure6.JPG"></p>
 
 ### 1.3.1 Processors
 The ‘‘brain’’ of the computer is the CPU. It fetches instructions from memory
@@ -845,7 +845,7 @@ Pipelines cause compiler writers and operating system writers great headaches be
 they expose the complexities of the underlying machine to them and they
 have to deal with them.
 
-<p  align = "center"><img src = "Figure7.jpg"></p>
+<p  align = "center"><img src = "Figure7.JPG"></p>
 
 Even more advanced than a pipeline design is a superscalar CPU, shown in
 Fig. 1-7(b). In this design, multiple execution units are present, for example, one
@@ -939,7 +939,7 @@ also hard to program. While GPUs can be useful for operating systems (e.g., encr
 or processing of network traffic), it is not likely that much of the operating
 system itself will run on the GPUs.
 
-<p  align = "center"><img src = "Figure8.jpg"></p>
+<p  align = "center"><img src = "Figure8.JPG"></p>
 
 ### 1.3.2 Memory
 The second major component in any computer is the memory. Ideally, a memory
@@ -954,7 +954,7 @@ The top layer consists of the registers internal to the CPU. They are made of
 the same material as the CPU and are thus just as fast as the CPU. Consequently,
 there is no delay in accessing them. The storage capacity available in them is
 
-<p  align = "center"><img src = "Figure9.jpg"></p>
+<p  align = "center"><img src = "Figure9.JPG"></p>
 
 typically 32 × 32 bits on a 32-bit CPU and 64 × 64 bits on a 64-bit CPU. Less than
 1 KB in both cases. Programs must manage the registers (i.e., decide what to keep
@@ -1060,7 +1060,7 @@ as well. The only problem is that the time to randomly access data on it is clos
 three orders of magnitude slower. The reason is that a disk is a mechanical device,
 as shown in Fig. 1-10.
 
-<p  align = "center"><img src = "Figure10.jpg"></p>
+<p  align = "center"><img src = "Figure10.JPG"></p>
 
 A disk consists of one or more metal platters that rotate at 5400, 7200, 10,800
 RPM or more. A mechanical arm pivots over the platters from the corner, similar
@@ -1206,7 +1206,7 @@ the interrupt (which it may not be if it is busy handling a higher-priority one)
 a pin on the CPU chip telling it, in step 3. In step 4, the interrupt controller puts the number of the device on the bus so the CPU can read it and know which
 device has just finished (many devices may be running at the same time).
 
-<p  align = "center"><img src = "Figure11.jpg"></p>
+<p  align = "center"><img src = "Figure11.JPG"></p>
 
 Once the CPU has decided to take the interrupt, the program counter and PSW
 are typically then pushed onto the current stack and the CPU switched into kernel
@@ -1245,7 +1245,7 @@ added, both for faster I/O devices and for CPU-to-memory traffic. As a consequen
 of this evolution, a large x86 system currently looks something like
 Fig. 1-12.
 
-<p  align = "center"><img src = "Figure12.jpg"></p>
+<p  align = "center"><img src = "Figure12.JPG"></p>
 
 This system has many buses (e.g., cache, memory, PCIe, PCI, USB, SATA, and
 DMI), each with a different transfer rate and function. The operating system must
@@ -1595,7 +1595,7 @@ get some job done often need to communicate with one another and synchronize
 their activities. This communication is called **interprocess communication**, and
 will be addressed in detail in Chap. 2.
 
-<p  align = "center"><img src = "Figure13.jpg"></p>
+<p  align = "center"><img src = "Figure13.JPG"></p>
 
 Other process system calls are available to request more memory (or release
 unused memory), wait for a child process to terminate, and overlay its program
@@ -1684,7 +1684,7 @@ a file from a directory. Directory entries may be either files or other director
 This model also gives rise to a hierarchy—the file system—as shown in
 Fig. 1-14.
 
-<p  align = "center"><img src = "Figure14.jpg"></p>
+<p  align = "center"><img src = "Figure14.JPG"></p>
 
 The process and file hierarchies both are organized as trees, but the similarity
 stops there. Process hierarchies usually are not very deep (more than three levels is
@@ -1740,7 +1740,7 @@ able to access these files is not as serious as it at first seems: file systems 
 always mounted on empty directories.) If a system contains multiple hard disks,
 they can all be mounted into a single tree as well.
 
-<p  align = "center"><img src = "Figure15.jpg"></p>
+<p  align = "center"><img src = "Figure15.JPG"></p>
 
 Another important concept in UNIX is the **special file**. Special files are provided
 in order to make I/O devices look like files. That way, they can be read and
@@ -1766,7 +1766,7 @@ process can discover that the output file it is writing on is not really a file,
 pipe, is by making a special system call. File systems are very important. We will
 have much more to say about them in Chap. 4 and also in Chaps. 10 and 11.
 
-<p  align = "center"><img src = "Figure16.jpg"></p>
+<p  align = "center"><img src = "Figure16.JPG"></p>
 
 ### 1.5.4 Input/Output
 
@@ -2080,7 +2080,7 @@ register (step 5). Then it executes a TRAP instruction to switch from user mode 
 kernel mode and start execution at a fixed address within the kernel (step 6). The
 TRAP instruction is actually fairly similar to the procedure-call instruction in the
 
-<p  align = "center"><img src = "Figure17.jpg"></p>
+<p  align = "center"><img src = "Figure17.JPG"></p>
 
 sense that the instruction following it is taken from a distant location and the return
 address is saved on the stack for use later.
@@ -2139,7 +2139,7 @@ value, which is zero in the child and equal to the child’s **PID (Process IDen
 in the parent. Using the returned PID, the two processes can see which one is the
 parent process and which one is the child process.
 
-<p  align = "center"><img src = "Figure18.jpg"></p>
+<p  align = "center"><img src = "Figure18.JPG"></p>
 
 In most cases, after a fork, the child will need to execute different code from
 the parent. Consider the case of the shell. It reads a command from the terminal,
@@ -2160,7 +2160,7 @@ is exec, but several library procedures call it with different parameters and sl
 different names. We will treat these as system calls here.) A highly simplified shell
 illustrating the use of fork, waitpid, and execve is shown in Fig. 1-19.
 
-<p  align = "center"><img src = "Figure19.jpg"></p>
+<p  align = "center"><img src = "Figure19.JPG"></p>
 
 In the most general case, execve has three parameters: the name of the file to
 be executed, a pointer to the argument array, and a pointer to the environment
@@ -2219,7 +2219,7 @@ to be opened, either as an absolute path name or relative to the working directo
 as well as a code of _*O RDONLY*_, _*O WRONLY*_, or _*O RDWR*_, meaning open for
 reading, writing, or both. To create a new file, the _*O CREAT*_ parameter is used.
 
-<p  align = "center"><img src = "Figure20.jpg"></p>
+<p  align = "center"><img src = "Figure20.JPG"></p>
 
 The file descriptor returned can then be used for reading or writing. Afterward, the
 file can be closed by close, which makes the file descriptor available for reuse on a
@@ -2260,7 +2260,7 @@ _*note*_. Thereafter, _*/usr/jim/memo*_ and _*/usr/ast/note*_ refer to the same 
 aside, whether user directories are kept in _*/usr, /user, /home*_, or somewhere else is
 simply a decision made by the local system administrator.
 
-<p  align = "center"><img src = "Figure21.jpg"></p>
+<p  align = "center"><img src = "Figure21.JPG"></p>
 
 Understanding how link works will probably make it clearer what it does.
 Every file in UNIX has a unique number, its i-number, that identifies it. This
@@ -2290,7 +2290,7 @@ where the first parameter is the name of a block special file for USB drive 0, t
 second parameter is the place in the tree where it is to be mounted, and the third
 parameter tells whether the file system is to be mounted read-write or read-only.
 
-<p  align = "center"><img src = "Figure22.jpg"></p>
+<p  align = "center"><img src = "Figure22.JPG"></p>
 
 After the mount call, a file on drive 0 can be accessed by just using its path
 from the root directory or the working directory, without regard to which drive it is
@@ -2391,7 +2391,7 @@ The Win32 interface does not have links to files, mounted file systems, security
 Win32 has a huge number of other calls that UNIX does not have, especially for
 managing the GUI. Windows Vista has an elaborate security system and also supports file links. Windows 7 and 8 add yet more features and system calls
 
-<p  align = "center"><img src = "Figure23.jpg"></p>
+<p  align = "center"><img src = "Figure23.JPG"></p>
 
 One last note about Win32 is perhaps worth making. Win32 is not a terribly
 uniform or consistent interface. The main culprit here was the need to be backward compatible with the previous 16-bit interface used in Windows 3.x.
@@ -2445,7 +2445,7 @@ are called **shared libraries**. In Windows they are called **DLLs (Dynamic-Link
 Libraries)**. They hav e file extension _*.dll*_ and the _*C:\Windows\system32*_ directory
 on Windows systems has well over 1000 of them.
 
-<p  align = "center"><img src = "Figure24.jpg"></p>
+<p  align = "center"><img src = "Figure24.JPG"></p>
 
 ### 1.7.2 Layered Systems
 
@@ -2460,7 +2460,7 @@ which could be programmed without having to worry about the fact that multiple
 processes were running on a single processor. In other words, layer 0 provided the
 basic multiprogramming of the CPU.
 
-<p  align = "center"><img src = "Figure25.jpg"></p>
+<p  align = "center"><img src = "Figure25.JPG"></p>
 
 Layer 1 did the memory management. It allocated space for processes in main
 memory and on a 512K word drum used for holding parts of processes (pages) for
@@ -2542,7 +2542,7 @@ Outside the kernel, the system is structured as three layers of processes all ru
 user mode, they do not have physical access to the I/O port space and cannot issue
 I/O commands directly. Instead, to program an I/O device, the driver builds a structure telling which values to write to which I/O ports and makes a kernel call telling
 
-<p  align = "center"><img src = "Figure26.jpg"></p>
+<p  align = "center"><img src = "Figure26.JPG"></p>
 
 the kernel to do the write. This approach means that the kernel can check to see
 that the driver is writing (or reading) from I/O it is authorized to use. Consequently
@@ -2594,7 +2594,7 @@ As far as the client is concerned, the same thing happens in both cases: request
 sent and replies come back. Thus the client-server model is an abstraction that can
 be used for a single machine or for a network of machines.
 
-<p  align = "center"><img src = "Figure27.jpg"></p>
+<p  align = "center"><img src = "Figure27.JPG"></p>
 
 Increasingly many systems involve users at their home PCs as clients and large
 machines elsewhere running as servers. In fact, much of the Web operates this
@@ -2623,7 +2623,7 @@ bare hardware and does the multiprogramming, providing not one, but several virt
 other operating systems, these virtual machines are not extended machines, with
 files and other nice features. Instead, they are _*exact*_ copies of the bare hardware, including kernel/user mode, I/O, interrupts, and everything else the real machine has.
 
-<p  align = "center"><img src = "Figure28.jpg"></p>
+<p  align = "center"><img src = "Figure28.JPG"></p>
 
 Because each virtual machine is identical to the true hardware, each one can
 run any operating system that will run directly on the bare hardware. Different virtual machines can, and frequently do, run different operating systems. On the original IBM VM/370 system, some ran OS/360 or one of the other large batch or transaction-processing operating systems, while others ran a single-user, interactive
@@ -2667,7 +2667,7 @@ situation is illustrated in Fig. 1-29(a), where the term ‘‘virtual machine m
 has been renamed **type 1 hypervisor**, which is commonly used nowadays because ‘‘virtual machine monitor’’ requires more keystrokes than people are prepared to
 put up with now. Note that many authors use the terms interchangeably though.
 
-<p  align = "center"><img src = "Figure29.jpg"></p>
+<p  align = "center"><img src = "Figure29.JPG"></p>
 
 While no one disputes the attractiveness of virtual machines today, the problem
 then was implementation. In order to run virtual machine software on a computer,
@@ -2856,7 +2856,7 @@ an executable program, traditionally called a.out on UNIX systems. The various
 components of this process are illustrated in Fig. 1-30 for a program with three C
 files and two header files. Although we have been discussing operating system development here, all of this applies to developing any large program.
 
-<p  align = "center"><img src = "Figure30.jpg"></p>
+<p  align = "center"><img src = "Figure30.JPG"></p>
 
 
 ### 1.8.4
@@ -2970,7 +2970,7 @@ units greater than 1 capitalized. Thus a 1-TB database occupies 1012 bytes of st
 micro both begin with the letter ‘‘m,’’ a choice had to be made. Normally, ‘‘m’’ is
 for milli and ‘‘μ’’ (the Greek letter mu) is for micro.
 
-<p  align = "center"><img src = "Figure31.jpg"></p>
+<p  align = "center"><img src = "Figure31.JPG"></p>
 
 It is also worth pointing out that, in common industry practice, the units for
 measuring memory sizes have slightly different meanings. There kilo means 210
