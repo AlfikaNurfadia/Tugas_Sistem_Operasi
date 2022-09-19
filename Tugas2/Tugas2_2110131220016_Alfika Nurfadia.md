@@ -1,7 +1,7 @@
 ### Nama        : ALFIKA NURFADIA
 ### NIM         : 2110131220016
 ---
-# Layanan Sistem Operasi, System Calls, dan System Program
+# Layanan Sistem Operasi, Layanan Sistem Operasi & Sistem Program, dan System Calls
 
 ## Layanan Sistem Operasi
 
@@ -52,6 +52,54 @@ sendiri. Layanan tambahan itu yaitu :
     saja dilakukan dengan terlebih dahulu mengidentifikasi pengguna. Ini bisa 
     dilakukan dengan meminta passsword bila ingin menggunakan sumber daya.
 
+
+## System Program
+
+System program menyediakan lingkungan yang memungkinkan pengembangan program 
+dan eksekusi berjalan dengan baik. 
+
+Dapat dikategorikan :
+
+- Manajemen/manipulasi Berkas
+    Membuat, menghapus, copy, rename, print, memanipulasi berkas dan direktori 
+- Informasi status
+    Beberapa program meminta informasi tentang tanggal, jam, jumlah memori dan 
+    disk yang tersedia, jumlah pengguna dan informasi lain yang sejenis. 
+- Modifikasi berkas
+    membuat berkas dan memodifikasi isi berkas yang disimpan pada disk atau tape. 
+- Pendukung bahasa        pemrograman 
+    kadang kala kompilator, assembler, dan interpreter dari bahasa pemrograman 
+    diberikan kepada pengguna dengan bantuan sistem operasi. 
+- Loading dan eksekusi program
+    Ketika program di-assembly atau di-compile, program tersebut harus di-load ke 
+    dalam memori untuk dieksekusi. Untuk itu sistem harus menyediakan absolute 
+    loaders, relocatable loaders, linkage editors,dan overlay loaders
+- Komunikasi
+    menyediakan mekanisme komunikasi antara proses, pengguna, dan sistem 
+    komputer yang berbeda. Sehingga pengguna bisa mengirim pesan, menelusuri 
+    halaman web, mengirim e-mail, atau mentransfer berkas.
+
+Umumnya sistem operasi dilengkapi oleh system-utilities atau program aplikasi yang di 
+dalamnya termasuk web browser, word prossesor dan format teks, sistem database, 
+games. System program yang paling penting adalah command interpreter (mengambil 
+dan menerjemahkan user-specified command selanjutnya).
+
+## Struktur Sistem
+
+Sebuah sistem yang besar dan kompleks seperti sistem operasi modern harus diatur 
+dengan cara membagi task kedalam komponen-komponen kecil agar dapat berfungsi 
+dengan baik dan mudah dimodifikasi. Pada bab ini, kita akan membahas cara komponenkomponen ini dihubungkan satu sama lain. Menurut Avi Silberschatz, Peter Galvin, dan 
+Greg Gagne, ada tiga cara yaitu:
+- Struktur Sederhana
+- Pendekatan Terlapis
+- Mikrokernel
+
+Sedangkan menurut William Stallings, kita bisa memandang sistem sebagai seperangkat 
+lapisan. Tiap lapisan manampilkan bagian fungsi yang dibutuhkan oleh sistem operasi. 
+Bagian yang terletak pada lapisan yang lebih rendah akan menmpilkan fungsi yang lebih 
+primitif dan menyimpan detail fungsi tersebut.
+
+
 ## System Calls
 
 Biasanya tersedia sebagai instruksi bahasa rakitan. Beberapa sistem mengizinkan system 
@@ -78,7 +126,7 @@ off pada stack (oleh sistem operasi)
     atau mengeksekusi program lain, disini diperlukan lagi suatu system calls. Juga 
     ketika membuat suatu proses baru dan menghentikan sebuah proses. Ada juga 
     system calls yang dipanggil ketika kita ingin meminta dan merubah atribut dari 
-    suatu proses. 
+    suatu proses. x
 
     MS-DOS adalah contoh dari sistem single-tasking. MS-DOS menggunakan 
     metode yang sederhana dalam menjalankan program dan tidak menciptakan 
@@ -131,51 +179,66 @@ off pada stack (oleh sistem operasi)
     <img src="ss4.JPG">
       Dalam message-passing, sebelum komunikasi dapat dilakukan harus dibangun dulu sebuah koneksi.Untuk itu diperlukan suatu system calls dalam pengaturan koneksi tersebut, baik dalam menghubungkan koneksi tersebut maupun dalam memutuskan koneksi tersebut ketika komunikasi sudah selesai dilakukan. Juga diperlukan suatu system calls untuk membaca dan menulis pesan( message ) agar pertukaran informasi dapat dilakukan.
 
-## System Program
+---
+## Komponen Sistem Operasi
+1. Manajemen Proses
+    <img src="ss8.PNG">
+    Manajemen proses merupakan proses yang dilakukan atau yang sedang berjalan misal membuka aplikasi Microsoft word, adobe primiere dll dan pada saat dilakukan maka prosessor mengerjakan dalam waktu yang bersamaan. Tapi kenapa tidak terjadi tabrakan data pada dilakukan secara bersamaan. Karena disini sistem operasi bekerja dimana sebagai pengolah kerja prosessor sehingga tidak mengakibatkan terjadinya tabrakan data.
+2. Manajemen Memory Utama
+    <img src="ss11.PNG">
+    Manajemen memory utama maksudnya disini tempat sementara data atau informasi kemudian diteruskan ke prosessor supaya tidak terjadi tabrakan data. Nah disini sistem operasi juga bertanggung jawab pada aktivitas yang berkaitan dengan memory seperti :
 
-System program menyediakan lingkungan yang memungkinkan pengembangan program 
-dan eksekusi berjalan dengan baik. 
+    - Bisa memilih program yang hendak diload ke dalam memori
+    - Bisa mengalokasikan ruang memorinya sesuai kebutuhan
+    - Bisa menjaga track dari memori ketika sedang digunakan
+3. Manajemen File
+    <img src="ss12.PNG">
+    File merupakan berkas bisa berupa data misalnya file video, music, dan gambar. Sistem operasi perlu mengatur aktivitas yang berkaitan dengan file. File dapat mempunyai struktur yang bersifat hierarkis (direktori, volume, dll). Sistem operasi memberikan tanggapan atas manajemen file untuk aktifitas-aktifitas berikut:
 
-Dapat dikategorikan :
-
-- Manajemen/manipulasi Berkas
-    Membuat, menghapus, copy, rename, print, memanipulasi berkas dan direktori 
-- Informasi status
-    Beberapa program meminta informasi tentang tanggal, jam, jumlah memori dan 
-    disk yang tersedia, jumlah pengguna dan informasi lain yang sejenis. 
-- Modifikasi berkas
-    membuat berkas dan memodifikasi isi berkas yang disimpan pada disk atau tape. 
-- Pendukung bahasa        pemrograman 
-    kadang kala kompilator, assembler, dan interpreter dari bahasa pemrograman 
-    diberikan kepada pengguna dengan bantuan sistem operasi. 
-- Loading dan eksekusi program
-    Ketika program di-assembly atau di-compile, program tersebut harus di-load ke 
-    dalam memori untuk dieksekusi. Untuk itu sistem harus menyediakan absolute 
-    loaders, relocatable loaders, linkage editors,dan overlay loaders
-- Komunikasi
-    menyediakan mekanisme komunikasi antara proses, pengguna, dan sistem 
-    komputer yang berbeda. Sehingga pengguna bisa mengirim pesan, menelusuri 
-    halaman web, mengirim e-mail, atau mentransfer berkas.
-
-Umumnya sistem operasi dilengkapi oleh system-utilities atau program aplikasi yang di 
-dalamnya termasuk web browser, word prossesor dan format teks, sistem database, 
-games. System program yang paling penting adalah command interpreter (mengambil 
-dan menerjemahkan user-specified command selanjutnya).
-
-## Struktur Sistem
-
-Sebuah sistem yang besar dan kompleks seperti sistem operasi modern harus diatur 
-dengan cara membagi task kedalam komponen-komponen kecil agar dapat berfungsi 
-dengan baik dan mudah dimodifikasi. Pada bab ini, kita akan membahas cara komponenkomponen ini dihubungkan satu sama lain. Menurut Avi Silberschatz, Peter Galvin, dan 
-Greg Gagne, ada tiga cara yaitu:
-- Struktur Sederhana
-- Pendekatan Terlapis
-- Mikrokernel
-
-Sedangkan menurut William Stallings, kita bisa memandang sistem sebagai seperangkat 
-lapisan. Tiap lapisan manampilkan bagian fungsi yang dibutuhkan oleh sistem operasi. 
-Bagian yang terletak pada lapisan yang lebih rendah akan menmpilkan fungsi yang lebih 
-primitif dan menyimpan detail fungsi tersebut.
+    - Pembuatan dan penghapusan file,
+    - Pembuatan dan penghapusan direktori,
+    - Mendukung primitif-primitif manipulasi file dan direktori,
+    - Pemetaan file dalam secondnary storage,
+    - Backup file dalam media yang stabil (non-volatile).
+    
+ ## Komponen Layanan Sistem Operasi & Sistem Program 
 
 
+
+## Komponen Sistem Call
+1. System call manajemen proses
+    System Call untuk manajemen proses diperlukan untuk mengatur proses-proses yang sedang berjalan. Kita dapat melihat penggunaan system calls untuk manajemen Oproses pada Sistem Operasi Unix.
+
+    Contoh:
+
+    Perintah taskmgr mempunyai fungsi untuk memanggil Task Manager melalui CMD.Di dalam Task Manager, kamu dapat melihat beberapa data seperti penggunaan CPU, Memory, Disk, serta Network. Kamu juga bisa menutup aplikasi yang sedang berjalan atau mengalami freeze atau error melalui Task Manager.
+
+    <img src="ss14.JPG">
+    <img src="ss15.JPG">
+<br>
+
+2. System call manajemen berkas
+    System calls yang berhubungan dengan berkas sangat diperlukan. Seperti ketika kita ingin membuat atau menghapus suatu berkas. Atau ketika ingin membuka atau menutup suatu berkas yang telah ada, membaca berkas tersebut, dan menulis berkas itu. 
+
+    Contoh: 
+    
+    Membuat File atau Folder 
+    Untuk membuat folder, ketik nama folder dengan lokasi dimana anda ingin membuat folder. Berikut adalah perintahnya 
+    > mkdir < folder name with path >
+
+    contoh  
+    >    mkdir D:\Contoh_Membuat_Folder
+
+    <img src="ss13.JPG">
+    <img src="ss14.PNG">
+<br>
+
+3. System call pemeliharaan informasi
+    Beberapa system calls di sediakan untuk membatu pertukaran informasi antara pengguna dan sistem operasi. Contohnya system calls untuk meminta dan mengatur waktu dan tanggal.
+
+    Contoh:
+
+    Dengan menggunakan fungsi date, kamu bisa menampilkan tanggal pada layar cmd. Selain itu, kamu juga bisa mengatur ulang tanggal pada PC kamu jika belum sesuai.
+
+    <img src="ss17.JPG">    
 
