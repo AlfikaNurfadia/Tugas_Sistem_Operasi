@@ -1,7 +1,7 @@
 ### Nama        : ALFIKA NURFADIA
 ### NIM         : 2110131220016
 ---
-# Layanan Sistem Operasi, Layanan Sistem Operasi & Sistem Program, dan System Calls
+# Layanan Sistem Operasi, Sistem Operasi, dan System Calls
 
 ## Layanan Sistem Operasi
 
@@ -182,17 +182,17 @@ off pada stack (oleh sistem operasi)
 ---
 ## Komponen Sistem Operasi
 1. Manajemen Proses
-    <img src="ss8.PNG">
+    <img src="ss8.png">
     Manajemen proses merupakan proses yang dilakukan atau yang sedang berjalan misal membuka aplikasi Microsoft word, adobe primiere dll dan pada saat dilakukan maka prosessor mengerjakan dalam waktu yang bersamaan. Tapi kenapa tidak terjadi tabrakan data pada dilakukan secara bersamaan. Karena disini sistem operasi bekerja dimana sebagai pengolah kerja prosessor sehingga tidak mengakibatkan terjadinya tabrakan data.
 2. Manajemen Memory Utama
-    <img src="ss11.PNG">
+    <img src="ss11.png">
     Manajemen memory utama maksudnya disini tempat sementara data atau informasi kemudian diteruskan ke prosessor supaya tidak terjadi tabrakan data. Nah disini sistem operasi juga bertanggung jawab pada aktivitas yang berkaitan dengan memory seperti :
 
     - Bisa memilih program yang hendak diload ke dalam memori
     - Bisa mengalokasikan ruang memorinya sesuai kebutuhan
     - Bisa menjaga track dari memori ketika sedang digunakan
 3. Manajemen File
-    <img src="ss12.PNG">
+    <img src="ss12.png">
     File merupakan berkas bisa berupa data misalnya file video, music, dan gambar. Sistem operasi perlu mengatur aktivitas yang berkaitan dengan file. File dapat mempunyai struktur yang bersifat hierarkis (direktori, volume, dll). Sistem operasi memberikan tanggapan atas manajemen file untuk aktifitas-aktifitas berikut:
 
     - Pembuatan dan penghapusan file,
@@ -203,6 +203,17 @@ off pada stack (oleh sistem operasi)
     
  ## Komponen Layanan Sistem Operasi & Sistem Program 
 
+1. Layanan Eksekusi Program
+
+     Salah satu layanan yang diberikan oleh Sistem Operasi kepada User untuk memudahkan proses kerja adalah me-load / memanggil ke memory dan menjalankannya. Program tersebut pun harus dapat dihentikan/ diakhiri eksekusinya baik dalam bentuk normal atau pun tidak dalam keadaan normal (eror program).
+
+2. Layanan Operasi-operasi Input/Output
+
+    Saat sebuah program di-running / dijalankan, sering kali juga dibutuhkan proses I/O baik berupa file atau peralatan I/O itu sendiri. Dalam hal ini sistem operasi harus bisa berfungsi sebagai pengontrol, karena hal ini tidak bisa secara lansung dilakukan oleh User karena aspek keamanan dan efesiensi.
+
+3. Layanan Manipulasi Sistem File
+
+    Kadang dalam suatu kondisi, program harus membaca dan menulis berkas, dan membuat ataupun menghapus berkas. Fungsi ini harus bisa dijalankan oleh sebuah Sistem Operasi.
 
 
 ## Komponen Sistem Call
@@ -230,7 +241,7 @@ off pada stack (oleh sistem operasi)
     >    mkdir D:\Contoh_Membuat_Folder
 
     <img src="ss13.JPG">
-    <img src="ss14.PNG">
+    <img src="ss16.png">
 <br>
 
 3. System call pemeliharaan informasi
