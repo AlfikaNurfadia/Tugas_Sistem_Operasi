@@ -7,7 +7,11 @@
 
 * MS DOS = fokus pada fungsional tertentu dan tidak dapt dibagi dalam beberapa modul.
 
+<p align="center"><img src="msdos.JPG"></p>
+
 * UNIX = fokus pada setiap prosedur yang memanggil prosedur lainnya, sehingga menyebabkan tiap prosedur dapat saling berkomunikasi dan kernel berisikan semua layanan yang disediakan oleh sistem ke pengguna.
+
+<p align="center"><img src="unix.JPG"></p>
 
 <p align="justify">Struktur sistem operasi monolitik hanya dapat digunakan pada beberapa perangkat keras saja. Hal ini disebabkan karena sistem operasi monolotik dilengkapi dengan operasi dual mode dan pelayanan system calls. Namun, Intel 8088 tidak dapat menggunakan dual mode sehingga tidak akan ada proteksi pada perangkat keras yang digunakan.
 
@@ -24,6 +28,8 @@ Secara umum, system calls pada sistem operasi monolitik dibuat dengan cara :
 <p align="justify">Selain itu, struktur ini dapat menyebabkan pemborosan jika setiap kernelnya harus menjalankan kernel monolitik yang sangat besar. Perlu diingat juga bahwa satu saja kesalahan pemrograman dari salah satu bagian kernel dapat menyebabkan matinya keseluruhan sistem monolitik yang digunakan.
 
 ## **2. PENDEKATAN BERLAPIS**
+<p align="center"><img src="terlapis.JPG"></p>
+
 <p align="justify">Sistem operasi berlapis memiliki beberapa lapis yang beragam, mulai dari bagian atas hingga bagian bawah. Masing-masing lapisan ini memiliki fungsi dan tujuannya tersendiri yang saling mendukung satu sama lain. Lapisan paling bawah digunakan untuk perangkat keras, sedangkan lapisan paling atas digunakan untuk user interface.
 
 <p align="justify">Sistem berlapis banyak digunakan karena dapat mengurangi kompleksitas rancangan dari implementasi sebuah sistem operasi. Setiap lapisan struktur tersebut berasal dari hasil implementasi objek abstrak.
@@ -76,6 +82,7 @@ Beberapa jenis lapisan yang digunakan dalam sistem operasi berlapis adalah :
 <p align="justify">Lapisan program aplikasi bertujuan untuk menghubungkan pengguna dengan aplikasi yang digunakan, dimana sangat berhubungan erat dengan user interface. Lapisan inin akan memproses segala informasi yang dibutuhkan oleh pengguna dalam aplikasi.
 
 ## **3. KERNEL MIKRO**
+<p align="center"><img src="kernel.JPG"></p>
 <p align="justify">Kernel mikro adalah sistem operasi yang mempermudah komunikasi antara program klien dengan beragam layanan pada ruang <i>user.</i>
 
 <p align="justify">Komunikasi yang terjadi antar <i>module user</i> menggunakan <i>passing massage</i>. Kernel mikro dapat memperluas sistem operasi dan mudah diatur jika ada transformasi ke arsitektur yang baru. Kode program yang digunakan pada sistem ini juga lebih kecil dan lebih aman.
